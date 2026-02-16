@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="O melhor yakisoba e frango frito da cidade. Sabor oriental com qualidade premium. Faca seu pedido agora!" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Yaki Delivery</title>
+  <link rel="icon" href="fotos/logo4.png">
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo">
+        <div class="logo__icon">
+          <img src="fotos/logo3.png" alt="Logo Yaki Delivery">
+        </div>
+        <div class="logo__text">
+          <span class="logo__name">Yaki Delivery</span>
+          <span class="logo__sub">Yakisoba &amp; Frango Frito</span>
+        </div>
+      </a>
+      <nav class="nav-desktop" aria-label="Menu principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#yakisoba">Yakisoba</a>
+        <a href="#frango">Frango Frito</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn-primary">Pedir Agora</a>
+      </nav>
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <div class="hamburger__lines">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" aria-label="Menu mobile">
+    <a href="#inicio">Inicio</a>
+    <a href="#yakisoba">Yakisoba</a>
+    <a href="#frango">Frango Frito</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+    <a href="https://wa.me/5511954485220" target="_blank" rel="noopener noreferrer" class="btn-primary" style="margin-top:1rem;">Pedir Agora</a>
+    <div class="mobile-menu__socials">
+      <!-- WhatsApp usando imagem salva -->
+      <a href="https://wa.me/5511954485220" target="_blank" rel="noopener noreferrer"
+        class="hero__social-btn hero__social-btn--whatsapp" aria-label="WhatsApp">
+        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+
+    </a>
+
+
+      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social-circle social-circle--instagram" aria-label="Instagram">
+        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+
+  <div class="hero__bg">
+    <img src="fotos/hero.jpeg" alt="Comida oriental" />
+    <div class="hero__overlay"></div>
+  </div>
+
+  <div class="hero__top-line"></div>
+
+  <div class="hero__socials">
+  <a href="https://wa.me/5511954485220" target="_blank" rel="noopener noreferrer"
+     class="hero__social-btn hero__social-btn--whatsapp" aria-label="WhatsApp">
+    <!-- SVG do botão flutuante -->
+    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+
+    </svg>
+  </a>
+
+  <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"
+     class="hero__social-btn hero__social-btn--instagram" aria-label="Instagram">
+    <svg fill="currentColor" viewBox="0 0 24 24" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+    <title>Instagram</title>
+    <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+  </svg>
+  </a>
+</div>
+
+
+  <div class="hero__content">
+    <div class="hero__badge">Delivery & Retirada</div>
+
+    <h1 class="hero__title">
+      Sabor que <span class="hero__title-highlight">transforma</span>
+    </h1>
+
+    <p class="hero__description">
+      Yakisoba artesanal e frango frito crocante feitos com ingredientes selecionados.
+      Uma experiência de sabor única direto para você.
+    </p>
+
+    <div class="hero__buttons">
+      <a href="#yakisoba" class="btn-hero-primary">
+        <span>VER CARDÁPIO</span>
+        <span class="btn-hero-primary__shimmer"></span>
+      </a>
+
+      <a href="https://wa.me/5511954485220" target="_blank" rel="noopener noreferrer" class="btn-hero-secondary">
+        <svg fill="currentColor" viewBox="0 0 24 24" width="20" height="20">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        FALE CONOSCO
+      </a>
+
+    </div>
+  </div>
+
+</section>
+
+
+  <!-- YAKISOBA SECTION -->
+<!-- YAKISOBA SECTION -->
+<section class="section section--dark" id="yakisoba">
+  <div class="section__line"></div>
+  <div class="section_glow section_glow--red" style="top:-10rem;right:-10rem;"></div>
+  <div class="section_glow section_glow--green" style="bottom:-10rem;left:-10rem;"></div>
+  <div class="container">
+    <div class="feature-banner reveal">
+      <img src="fotos/yakihero.jpeg" alt="Yakisoba artesanal" />
+      <div class="feature-banner__overlay-left"></div>
+      <div class="feature-banner__content">
+        <p class="feature-banner__tag">Especialidade da casa</p>
+        <h3 class="feature-banner__title font-serif">Yakisoba Artesanal</h3>
+        <p class="feature-banner__desc">Preparado na hora com ingredientes selecionados e temperos orientais autênticos</p>
+      </div>
+    </div>
+
+    <div class="section-header reveal">
+      <span class="section-header__badge">Nosso Cardápio</span>
+      <h2 class="section-header__title font-serif">Yakisoba <span>Artesanal</span></h2>
+      <p class="section-header__desc">Cada porção é preparada na hora, com ingredientes frescos e temperos autênticos que garantem uma explosão de sabores</p>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- CARD 1 -->
+      <div class="product-card reveal stagger-1">
+        <div class="product-card__image">
+          <img src="fotos/yakitra.jpeg" alt="Yakisoba Tradicional" />
+          <div class="product-card__image-overlay"></div>
+          <span class="product-card__price">R$ 34,90</span>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name font-serif">Yakisoba de Frango</h3>
+          <p class="product-card__desc">Macarrão artesanal com legumes frescos, frango grelhado, molho shoyu especial e cebolinha. O clássico que nunca sai de moda.</p>
+          <a href="#" class="btn-order">Peça Agora</a>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="product-card reveal stagger-2">
+        <div class="product-card__image">
+          <img src="fotos/yakiespecial.jpeg" alt="Yakisoba Especial" />
+          <div class="product-card__image-overlay"></div>
+          <span class="product-card__price">R$ 35,90</span>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name font-serif">Yakisoba de Carne</h3>
+          <p class="product-card__desc">Nossa receita premium com carne bovina, camarão, legumes selecionados, ovo e molho secreto da casa. Irresistível!</p>
+          <a href="#" class="btn-order">Peça Agora</a>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="product-card reveal stagger-3">
+        <div class="product-card__image">
+          <img src="fotos/yakicama (2).jpeg" alt="Yakisoba de Camarão" />
+          <div class="product-card__image-overlay"></div>
+          <span class="product-card__price">R$ 45,90</span>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name font-serif">Yakisoba de Camarão</h3>
+          <p class="product-card__desc">Camarões frescos salteados com legumes crocantes, gergelim torrado e molho oriental premium. Uma experiência única.</p>
+          <a href="#" class="btn-order">Peça Agora</a>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="product-card reveal stagger-4">
+        <div class="product-card__image">
+          <img src="fotos/yakitra.jpeg" alt="Yakisoba Tradicional" />
+          <div class="product-card__image-overlay"></div>
+          <span class="product-card__price">R$ 34,90</span>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name font-serif">Yakisoba Misto - Médio</h3>
+          <p class="product-card__desc">Macarrão artesanal com legumes frescos, frango grelhado, molho shoyu especial e cebolinha. O clássico que nunca sai de moda.</p>
+          <a href="#" class="btn-order">Peça Agora</a>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="product-card reveal stagger-5">
+        <div class="product-card__image">
+          <img src="fotos/yakiespecial.jpeg" alt="Yakisoba Especial" />
+          <div class="product-card__image-overlay"></div>
+          <span class="product-card__price">R$ 39,90</span>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name font-serif">Yakisoba Misto - Grande</h3>
+          <p class="product-card__desc">Nossa receita premium com carne bovina, camarão, legumes selecionados, ovo e molho secreto da casa. Irresistível!</p>
+          <a href="#" class="btn-order">Peça Agora</a>
+        </div>
+      </div>
+
+    
+    </div>
+  </div>
+</section>
+
+
+  <!-- FRANGO FRITO SECTION -->
+  <section class="section section--darker" id="frango">
+    <div class="section__line"></div>
+    <div class="section_glow section_glow--red" style="top:-10rem;left:-10rem;"></div>
+    <div class="section_glow section_glow--green" style="bottom:-10rem;right:-10rem;"></div>
+    <div class="container">
+      <div class="feature-banner reveal">
+        <img src="fotos/frangohero.jpeg" alt="Frango frito crocante" />
+        <div class="feature-banner__overlay-right"></div>
+        <div class="feature-banner_content feature-banner_content--right">
+          <p class="feature-banner__tag">Crocância perfeita</p>
+          <h3 class="feature-banner__title font-serif">Frango Frito</h3>
+          <p class="feature-banner_desc feature-banner_desc--right">Empanado artesanal com temperos exclusivos e fritado na temperatura ideal</p>
+        </div>
+      </div>
+      <div class="section-header reveal">
+        <span class="section-header__badge">Irresistivel</span>
+        <h2 class="section-header__title font-serif">Frango Frito <span>Crocante</span></h2>
+        <p class="section-header__desc">Crocante por fora, suculento por dentro. Nosso frango frito e preparado com uma receita secreta que vai te conquistar</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card reveal stagger-1">
+          <div class="product-card__image">
+            <img src="fotos/frangobaldee.jpeg" alt="Balde de Frango" />
+            <div class="product-card__image-overlay"></div>
+            <span class="product-card__price">R$ 39,90</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name font-serif">Balde de Frango</h3>
+            <p class="product-card__desc">8 pedaços de frango frito extra crocante com tempero secreto. Perfeito para compartilhar com a familia ou amigos.</p>
+            <a href="https://wa.me/5511954485220?text=Ola!%20Gostaria%20de%20pedir%20um%20Balde%20de%20Frango%20-%20R%24%2039%2C90" target="_blank" rel="noopener noreferrer" class="btn-order">
+              <svg fill="currentColor" viewBox="0 0 24 24" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Peça Agora
+            </a>
+          </div>
+        </div>
+        <div class="product-card reveal stagger-2">
+          <div class="product-card__image">
+            <img src="fotos/frangofilee.jpeg" alt="Filezinhos Crocantes" />
+            <div class="product-card__image-overlay"></div>
+            <span class="product-card__price">R$ 29,90</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name font-serif">Filezinhos Crocantes</h3>
+            <p class="product-card__desc">Filezinhos empanados em crosta dourada e crocante, acompanham molho especial da casa. Irresistivelmente crocantes.</p>
+            <a href="https://wa.me/5511954485220?text=Ola!%20Gostaria%20de%20pedir%20Filezinhos%20Crocantes%20-%20R%24%2029%2C90" target="_blank" rel="noopener noreferrer" class="btn-order">
+              <svg fill="currentColor" viewBox="0 0 24 24" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Peça Agora
+            </a>
+          </div>
+        </div>
+        <div class="product-card reveal stagger-3">
+          <div class="product-card__image">
+            <img src="fotos/frangofrito.jpeg" alt="Combo Familia" />
+            <div class="product-card__image-overlay"></div>
+            <span class="product-card__price">R$ 59,90</span>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name font-serif">Combo Familia</h3>
+            <p class="product-card__desc">12 pedaços de frango frito, batata frita, coleslaw e 2 molhos. O combo perfeito para reunir todo mundo.</p>
+            <a href="https://wa.me/5511954485220?text=Ola!%20Gostaria%20de%20pedir%20o%20Combo%20Familia%20-%20R%24%2059%2C90" target="_blank" rel="noopener noreferrer" class="btn-order">
+              <svg fill="currentColor" viewBox="0 0 24 24" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Peça Agora
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE / FEATURES -->
+  <section class="section section--dark" id="sobre">
+    <div class="section__line"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__badge">Por que nos escolher</span>
+        <h2 class="section-header__title font-serif">Uma experiência <span>única</span></h2>
+        <p class="section-header__desc">Mais do que comida, entregamos uma experiência completa de sabor e qualidade</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal stagger-1">
+          <div class="feature-card__icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></svg>
+          </div>
+          <h3 class="feature-card__title">Feito na Hora</h3>
+          <p class="feature-card__desc">Cada pedido e preparado na hora para garantir frescor e sabor máximo.</p>
+        </div>
+        <div class="feature-card reveal stagger-2">
+          <div class="feature-card__icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="feature-card__title">Entrega Rápida</h3>
+          <p class="feature-card__desc">Receba seu pedido em até 40 minutos na sua porta.</p>
+        </div>
+        <div class="feature-card reveal stagger-3">
+          <div class="feature-card__icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3 class="feature-card__title">Delivery Grátis</h3>
+          <p class="feature-card__desc">Frete grátis para pedidos acima de R$ 50,00 na região.</p>
+        </div>
+        <div class="feature-card reveal stagger-4">
+          <div class="feature-card__icon">
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="feature-card__title">Qualidade Premium</h3>
+          <p class="feature-card__desc">Ingredientes selecionados e receitas exclusivas da casa.</p>
+        </div>
+      </div>
+      <div class="stats-bar reveal">
+       
+        <div class="stat">
+          <div class="stat__value font-serif" data-target="4.9">0</div>
+          <div class="stat__label">Avaliação média</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value font-serif" data-target="30" data-suffix="min">0</div>
+          <div class="stat__label">Tempo médio</div>
+        </div>
+        <div class="stat">
+          <div class="stat__value font-serif" data-target="100" data-suffix="%">0</div>
+          <div class="stat__label">Satisfação</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section section--darker" id="contato">
+    <div class="section__line"></div>
+    <div class="section_glow section_glow--red" style="top:-10rem;left:50%;transform:translateX(-50%);"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__badge">Fale Conosco</span>
+        <h2 class="section-header__title font-serif">Entre em <span>Contato</span></h2>
+        <p class="section-header__desc">Faça seu pedido pelo WhatsApp ou visite nosso estabelecimento</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card contact-card--whatsapp reveal stagger-1">
+          <div class="contact-card_icon contact-card_icon--whatsapp">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <h3 class="contact-card__title font-serif">WhatsApp</h3>
+          <p class="contact-card__desc">Faça seu pedido diretamente pelo WhatsApp</p>
+          <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">Chamar no Zap</a>
+        </div>
+        <div class="contact-card contact-card--info reveal stagger-2">
+          <div class="info-item">
+            <div class="info-item__icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4 class="info-item__title">Endereco</h4>
+              <p class="info-item__text">Rua ..., 123 - Centro<br/>Cidade - Estado, 00000-000</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-item__icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <h4 class="info-item__title">Telefone</h4>
+              <p class="info-item__text">(00) 00000-0000</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-item__icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h4 class="info-item__title">Horário</h4>
+              <p class="info-item__text">Ter a Dom: 18h - 23h<br/>Segunda: Fechado</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-card contact-card--instagram reveal stagger-3">
+          <div class="contact-card_icon contact-card_icon--instagram">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </div>
+          <h3 class="contact-card__title font-serif">Instagram</h3>
+          <p class="contact-card__desc">Siga-nos para novidades e promoções exclusivas</p>
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="btn-instagram">Seguir no Insta</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="section__line"></div>
+    <div class="container">
+      <div class="footer__top">
+        <a href="#inicio" class="logo">
+          <div class="logo__icon">
+        <img src="fotos/logo.png" alt="Logo Yaki Delivery">
+          </div>
+          <div class="logo__text">
+            <span class="logo__name">Yaki Delivery</span>
+            <span class="logo__sub">Yakisoba &amp; Frango Frito</span>
+          </div>
+        </a>
+        <div class="footer__socials">
+          <a href="https://wa.me/5500000000000" target="blank" rel="noopener noreferrer" class="footersocial footer_social--whatsapp" aria-label="WhatsApp">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://instagram.com/" target="blank" rel="noopener noreferrer" class="footersocial footer_social--instagram" aria-label="Instagram">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <a href="#inicio">Inicio</a>
+        <a href="#yakisoba">Yakisoba</a>
+        <a href="#frango">Frango Frito</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer__copyright">
+        <p>Yaki Delivery - Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FAB -->
+  <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="whatsapp-fab" aria-label="Pedir pelo WhatsApp">
+    <span class="whatsapp-fab__ping"></span>
+    <svg fill="currentColor" viewBox="0 0 24 24" style="position:relative;z-index:1;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    /* ===================================================
+   SABOR ORIENTAL - Landing Page
+   JavaScript Puro
+   =================================================== */
+
+// ---- CONFIG ----
+const WHATSAPP_NUMBER = '5500000000000'; // ALTERE PARA SEU NUMERO
+const INSTAGRAM_URL = 'https://instagram.com/'; // ALTERE PARA SEU PERFIL
+
+// ---- DOM READY ----
+document.addEventListener('DOMContentLoaded', () => {
+  initHeader();
+  initMobileMenu();
+  initHeroAnimations();
+  initScrollReveal();
+  initWhatsAppFab();
+  initSmoothScroll();
+  initParallax();
+  initCountUp();
+});
+
+// ===================================================
+// HEADER - background ao scroll
+// ===================================================
+function initHeader() {
+  const header = document.querySelector('.header');
+  if (!header) return;
+
+  function onScroll() {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
+// ===================================================
+// MOBILE MENU
+// ===================================================
+function initMobileMenu() {
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  if (!hamburger || !mobileMenu) return;
+
+  const links = mobileMenu.querySelectorAll('a');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+  });
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+}
+
+// ===================================================
+// HERO ANIMATIONS - load animado
+// ===================================================
+function initHeroAnimations() {
+  setTimeout(() => {
+    document.querySelectorAll('.hero_badge, .herotitle, .herodescription, .herobuttons, .heroscroll, .hero_socials')
+      .forEach(el => el.classList.add('loaded'));
+  }, 200);
+}
+
+// ===================================================
+// SCROLL REVEAL - IntersectionObserver
+// ===================================================
+function initScrollReveal() {
+  const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+
+  if (!('IntersectionObserver' in window)) {
+    reveals.forEach(el => el.classList.add('visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: '0px 0px -50px 0px' }
+  );
+
+  reveals.forEach(el => observer.observe(el));
+}
+
+// ===================================================
+// WHATSAPP FAB
+// ===================================================
+function initWhatsAppFab() {
+  const fab = document.querySelector('.whatsapp-fab');
+  if (!fab) return;
+
+  function onScroll() {
+    if (window.scrollY > 400) {
+      fab.classList.add('show');
+    } else {
+      fab.classList.remove('show');
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
+// ===================================================
+// SMOOTH SCROLL
+// ===================================================
+function initSmoothScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+
+      const target = document.querySelector(targetId);
+      if (!target) return;
+
+      e.preventDefault();
+      const headerHeight = document.querySelector('.header').offsetHeight;
+      const top = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+      window.scrollTo({ top, behavior: 'smooth' });
+    });
+  });
+}
+
+// ===================================================
+// PARALLAX subtle no hero
+// ===================================================
+function initParallax() {
+  const heroBg = document.querySelector('.hero__bg img');
+  if (!heroBg) return;
+
+  window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    if (scrolled < window.innerHeight) {
+      heroBg.style.transform = `translateY(${scrolled * 0.3}px) scale(1.1)`;
+    }
+  }, { passive: true });
+}
+
+// ===================================================
+// COUNT UP para stats
+// ===================================================
+function initCountUp() {
+  const stats = document.querySelectorAll('.stat__value[data-target]');
+  if (!stats.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = el.getAttribute('data-target');
+          const suffix = el.getAttribute('data-suffix') || '';
+          const isDecimal = target.includes('.');
+          const targetNum = parseFloat(target);
+          const duration = 2000;
+          const startTime = performance.now();
+
+          function update(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+
+            const current = eased * targetNum;
+            if (isDecimal) {
+              el.textContent = current.toFixed(1) + suffix;
+            } else {
+              el.textContent = Math.floor(current).toLocaleString('pt-BR') + suffix;
+            }
+
+            if (progress < 1) {
+              requestAnimationFrame(update);
+            }
+          }
+
+          requestAnimationFrame(update);
+          observer.unobserve(el);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  stats.forEach(stat => observer.observe(stat));
+}
+  </script>
+</body>
+</html>
