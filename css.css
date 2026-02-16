@@ -14,7 +14,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 body {
@@ -46,7 +46,7 @@ img {
 
 /* ---- UTILITY ---- */
 .container {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -607,7 +607,7 @@ img {
 .section {
   position: relative;
   overflow: hidden;
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 @media (min-width: 1024px) {
   .section { padding: 8rem 0; }
@@ -1278,5 +1278,6 @@ img {
     background-color: transparent; /* se quiser fundo transparente */
   }
 }
+
 
 
